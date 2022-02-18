@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0984e3;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 30px;
+    padding-top: 20px;
+    color: #fff;
+}
+
+.title h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.title span {
+    font-weight: 300;
+
+}
+
+.bottle {
+    position: relative;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border: 3px solid #0f5d99;
+}
+
+.big-bottle {
+    width: 120px;
+    margin: auto;
+    height: 250px;
+    color: #11588f;
+}
+
+.empty-area {
+    background: #fff;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s linear;
+    flex-direction: column;
+}
+
+.empty-area h4 {
+    font-weight: 500;
+
+}
+
+.empty-area span {
+    font-size: 10px;
+}
+
+.water-area {
+    background: #5aa9f8;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    transition: 0.2s linear;
+}
+
+.showcase {
+    color: #fff;
+    margin: 20px 0 10px 0;
+}
+
+.bottle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin: auto;
+}
+
+.small-bottle {
+    background-color: #fff;
+    color: #0984e3;
+    width: 40px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.15s linear;
+}
+
+.small-bottle.active {
+    background: #5aa9f8;
+    color: #fff;
+}

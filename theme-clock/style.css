@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body.dark {
+    background: #000;
+}
+
+.toggle {
+    margin-top: -16rem;
+    background: #000;
+    color: #fff;
+    padding: .2rem .5rem;
+    font-size: .6rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark .toggle {
+    background: #fff;
+    color: #000;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.clock-container {
+    position: relative;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3px;
+    height: 80px;
+    background-color: #000;
+    transform-origin: bottom;
+    transition: .2s linear;
+}
+
+body.dark .needle {
+    background-color: #fff;
+}
+
+.needle.hour {
+    height: 45px;
+}
+
+.needle.minute {
+    transform: translate(-50%, -100%) rotate(270deg);
+}
+
+.needle.second {
+    background-color: #e74c3c;
+    transform: translate(-50%, -100%) rotate(50deg);
+}
+
+body.dark .needle.second {
+    background-color: #e74c3c;
+    transform: translate(-50%, -100%) rotate(50deg);
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+body.dark .time {
+    color: #fff;
+}
+
+.date {
+    font-size: .8rem;
+    color: #8b8b8b;
+}

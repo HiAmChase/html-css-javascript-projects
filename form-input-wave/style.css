@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #82ccdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #467580;
+    color: #fff;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+}
+
+.container h1 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 3px;
+}
+
+.form-control {
+    position: relative;
+    margin-top: 40px;
+}
+.form-control label {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 16px;
+    transition: 0.2s linear;
+}
+
+.form-control input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+button {
+    background: #74b9ff;
+    width: 100%;
+    margin: 30px 0;
+    padding: 8px 0;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom-color: #74b9ff;
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+    color: #cbe1f7;
+    transform: translateY(-18px);
+}

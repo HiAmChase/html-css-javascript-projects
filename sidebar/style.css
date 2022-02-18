@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    transition: transform 0.5s ease-in;
+    outline: none;
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    transform: rotate(90deg);
+}
+
+.sidebar {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-rows: 0.5fr 10fr 0.5fr;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.5s ease-in;
+}
+
+.show-sidebar {
+    width: 300px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+.sidebar-header img {
+    height: 40px;
+}
+
+.sidebar-header button {
+    border: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    outline: none;
+    color: #e74c3c;
+    transition: transform 3s linear;
+    cursor: pointer;
+}
+
+.sidebar-header button:hover {
+    transform: rotate(360deg);
+}
+
+.links li {
+    padding: 1rem;
+    transition: all 0.3s linear;
+}
+
+.links a {
+    color: grey;
+    font-size: 1.2rem;
+    width: 100vh;
+}
+
+.links li:hover {
+    background-color: aquamarine;
+}
+
+.links a:hover {
+    color: rgb(47, 128, 101);
+}
+
+.social-icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.5s linear;
+}
+
+.social-icons li:hover {
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        width: 100%;
+    }
+    .nav-toggle {
+        display: none;
+    }
+}

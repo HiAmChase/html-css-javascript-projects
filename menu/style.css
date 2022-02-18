@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --color-primary: #e58e26;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    padding: 3rem 0 0.5rem 0;
+}
+
+.underline {
+    margin: 0 auto 1rem auto;
+    width: 5%;
+    border-top: 4px solid #e58e26 ;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container .button-type {
+    margin: 0 0.3rem;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0 0.2rem;
+    font-size: 1rem;
+    border: 2px solid #e58e26;
+    border-radius: 3px;
+    color: var(--color-primary);
+    cursor: pointer;
+    outline: none;
+    transition: all 0.25s linear;
+    text-transform: capitalize;
+}
+
+.button-container .button-type:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    margin: 2rem 1rem;
+}
+
+.menu-item img{ 
+    width: 200px;
+    height: 150px;
+    border: 4px solid #e58e26;
+    border-radius: 5px;
+    padding: 0;
+    object-fit: cover;
+}
+
+.menu-item .item-header {
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+}
+
+.menu-item .item-header h4 {
+    text-transform: capitalize;
+}
+
+.menu-item .item-header .price {
+    color: var(--color-primary);
+}

@@ -1,0 +1,134 @@
+<body>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div id="container">
+    <header class="header">
+        <h1 id="title" class="text-center">Mẫu khảo sát</h1>
+        <p id="description" class="description text-center">Cảm ơn vì đã dành thời gian tham gia khảo sát</p>
+    </header>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required/>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required/>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="age">Age<span class="clue"> (optional)</span></label>
+            <input
+            type="number"
+            id="number"
+            name="age"
+            min="1"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+            required/>
+        </div>
+        <div class="form-group">
+            <p>Ngành nghề hiện tại của bạn là gì ?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Chọn ngành nghề</option>
+                <option value="student">Học sinh</option>
+                <option value="full-time">Công việc toàn thời gian</option>
+                <option value="part-time">Công việc bán thời gian</option>
+                <option value="retired">Đã nghỉ hưu</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Bạn có muốn giới thiệu mẫu khảo sát này đến một người bạn không ?</p>
+            <label>
+                <input
+                name="user-recommend"
+                value="sure"
+                type="radio"
+                class="radio-input"
+                checked/>Chắc chắn
+            </label>
+            <label>
+                <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="radio-input"
+                />Có lẽ
+            </label>
+            <label>
+                <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="radio-input"
+                />Không chắc
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Bạn cảm thấy điều gì không thích về mẫu khảo sát này</p>
+            <select id="unlike" name="unlike" class="form-control">
+                <option selected disabled value>Chọn điều không hài lòng</option>
+                <option value="color">Màu sắc</option>
+                <option value="image">Hình ảnh</option>
+                <option value="launch">Giao diện</option>
+                <option value="nothing">Hoàn toàn hài lòng</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>
+                Bạn muốn cải thiện điều gì ở mẫu khảo sát này
+                <span class="clue">(chọn nếu phù hợp)</span>
+            </p>
+            <label>
+                <input
+                name="improve"
+                value="color"
+                type="checkbox"
+                class="input-checkbox"
+                />Màu sắc
+            </label>
+            <label>
+                <input
+                name="improve"
+                value="image"
+                type="checkbox"
+                class="input-checkbox"
+                />Hình ảnh
+            </label>
+            <label>
+                <input
+                name="improve"
+                value="launch"
+                type="checkbox"
+                class="input-checkbox"
+                />Giao diện
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Bạn có nhận xét gì đối với mẫu khảo sát này ?</p>
+            <textarea
+            id="comment"
+            name="comment"
+            class="input-textarea"
+            placeholder="Nhận xét ở đây">
+        </textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" name="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
+</div>
+</body>

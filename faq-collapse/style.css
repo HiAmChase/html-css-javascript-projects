@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1.header {
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.box {
+    background-color: transparent;
+    width: 450px;
+    margin: 12px auto;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px 16px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s linear;
+}
+
+.content h4 {
+    font-size: 14px;
+    font-weight: 450;
+}
+
+.content p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 14px;
+    display: none;
+}
+
+.box button.btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px 6px;
+    margin-left: 8px;
+}
+
+.box button.btn:focus {
+    outline: none;
+}
+
+.box.active {
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0 ,0, 0.1);
+}
+
+.box.active .content p {
+    display: inline-block;
+}
+
+.box.active button.btn {
+    background: rgb(165, 165, 165);
+    color: #fff;
+    border-radius: 50%;
+}

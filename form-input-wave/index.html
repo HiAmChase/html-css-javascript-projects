@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Form Input Wave</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Please Login</h1>
+        <form>
+            <div class="form-control">
+                <input 
+                id="email"
+                name = "email"
+                type="email"
+                autocomplete="off"
+                required>
+                <label for="email">
+                    Email
+                </label>
+                <!--
+                        <span style="transition-delay: 30ms">E</span>
+                        <span style="transition-delay: 60ms">m</span>
+                        <span style="transition-delay: 90ms">a</span>
+                        <span style="transition-delay: 120ms">i</span>
+                        <span style="transition-delay: 150ms">l</span>
+                    -->
+            </div>
+            <div class="form-control">   
+                <input 
+                id="password"
+                name = "password"
+                type="password"
+                autocomplete="off"
+                required>
+                <label for="email">Password</label>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account?<a href="#">Register</a></p>
+    </div>
+</body>
+</html>

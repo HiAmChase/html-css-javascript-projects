@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --color-blue: #2e86de;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 1000px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    transition: 0.6s ease-in;
+    z-index: 100000;
+}
+
+header .toggle{
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+header .logo {
+    position: relative;
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+header ul li a {
+    position: relative;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.2s ease-in;
+}
+
+header ul li a:hover {
+    color: var(--color-blue);
+}
+
+.banner {
+    background-image:linear-gradient(
+        0deg,
+        rgba(46, 204, 113, 0.8),
+        rgba(46, 204, 113, 0.5)
+      ), url("images/image.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner .title {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+h1 {
+    position: relative;
+    font-size: 50px;
+}
+
+h1 span {
+    color: #000;
+}
+
+.banner .title p {
+    position: relative;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.banner form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner form input[type="email"] {
+    position: relative;
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn {
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+}
+
+.container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .content {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.content h2 span {
+    color:rgb(46, 204, 113);
+}
+
+.mxw800 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about {
+    background: #dfdfdf;
+}
+
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.about img {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 350;
+    letter-spacing: 1px;
+}
+
+.item-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.item-box .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+}
+
+.box img {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.box p {
+    text-transform: capitalize;
+}
+
+.benefits {
+    background: rgba(46, 204, 113, 0.2);
+}
+
+.benefit-box {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.benefit-box .box {
+    position: relative;
+    width: 250px;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-box .box i {
+    color: rgb(46, 204, 113);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.benefit-box .box h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: rgba(46, 204, 113, 1);
+}
+
+footer h3 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer .socials {
+    display: flex;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials li a {
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    header .toggle {
+        display: inline-block;
+    }   
+
+    header.sticky {
+        padding: 10px 40px;
+    }
+        
+    header {
+        background: #fff;
+        padding: 20px 40px;
+    }
+
+    header .logo {
+        color: #000;
+    }
+
+    header ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+        overflow: auto;
+        background: #fff;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    header.active ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header ul li {
+        margin: 10px auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    header ul li a {
+        color: #000;
+    }
+
+    .about img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+    
+    footer {
+        flex-direction: column;
+    }
+}

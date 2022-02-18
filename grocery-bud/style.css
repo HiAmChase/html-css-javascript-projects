@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d6e2ee;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main {
+    position: relative;
+    background-color: white;
+    padding: 3rem 1.5rem 2rem 1.5rem;
+    margin-top: 6rem;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main header {
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.main .form {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #e8f3fd;
+    font-family: inherit;
+}
+
+.form button {
+    background-color: #74b9ff;
+    padding: 0.2rem 0.5rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.form button:hover {
+    background-color: #3596f7;
+    color: whitesmoke;
+}
+
+#list li {
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#list .tool {
+    background-color: transparent;
+    border: none;
+    font-size: 0.8rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.edit {
+    color:rgb(115, 214, 16);
+}
+
+.delete {
+    color:rgb(235, 36, 36);
+}
+
+.alert {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    font-size: 0.7rem;
+    text-align: center;
+    display: none;
+    letter-spacing: 0.1rem;
+}
+
+.alert-danger {
+    display: block;
+    background-color: rgb(247, 221, 221);
+}
+
+.alert-success {
+    display: block;
+    background-color:rgb(193, 247, 139);
+}
+
+.clear {
+    display: block;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    color:red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    pointer-events: none;
+}

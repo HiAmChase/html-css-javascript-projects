@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #f5cd79;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+
+}
+
+header {
+    margin: 6rem 0 3rem 0;
+}
+
+header h3 {
+    font-family: 'Gret Vibe', sans-serif;
+    font-style: italic;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.card {
+    max-width: 600px;
+    background-color: #ffffff;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    transition: all 1s linear;
+    border-radius: 5px;
+}
+
+.card .question-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.card button {
+    color: var(--color-primary);
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.5s linear;
+}
+
+.card button:hover {
+    transform: rotate(90deg);
+}
+
+.card .text {
+    height: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card .text .vertical {
+    border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+
+.card .show-text {
+    height: auto;
+}
